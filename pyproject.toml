@@ -1,0 +1,23 @@
+[project]
+name = "nano-rag"
+version = "0.1.0"
+description = "simple rag pipeline"
+authors = [
+    {name = "10dimensions",email = "rndaorg@gmail.com"}
+]
+license = {text = "GNU"}
+requires-python = ">=3.12,<4.0.0"
+dependencies = [
+    "langchain (>=1.2.10,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "pytorch-cuda121"
+url = "https://download.pytorch.org/whl/cu121"
+priority = "explicit"
+
